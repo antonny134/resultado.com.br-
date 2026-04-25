@@ -56,18 +56,19 @@ function s4(){
 }
 //geografia
 function s5(){
-    var s1 = document.getElementById("soma17").value;
-    var s2 = document.getElementById("soma18").value;
-    var s3 = document.getElementById("soma19").value;
-    var s4 = document.getElementById("soma20").value;
+    var soma17 = document.getElementById("soma17").value;
+    var soma18 = document.getElementById("soma18").value;
+    var soma19 = document.getElementById("soma19").value;
+    var soma20 = document.getElementById("soma20").value;
     //resultado
-    var resultado5 = (Number(soma17) + Number(soma18) + Number(soma19) + Number(soma20))
+    var resultado5 = (Number(soma17) + Number(soma18) + Number(soma19) + Number(soma20)) / 4;
     if (resultado5 >= 7) {
         document.getElementById("somas5").innerHTML = 'você passou !'
     } else {
          document.getElementById("somas5").innerHTML = 'você não passou !'
     }
 }
+
 //prompt
 var prompts = prompt("Qual é o seu nome ?");
 var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;
