@@ -57,3 +57,17 @@ function s4(){
 //prompt
 var prompts = prompt("Qual é o seu nome ?");
 var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;
+//geografia
+function s5(){
+    var s1 = document.getElementById("soma17").value;
+    var s2 = document.getElementById("soma18").value;
+    var s3 = document.getElementById("soma19").value;
+    var s4 = document.getElementById("soma20").value;
+    //resultado
+    var resultado5 = (Number(soma17) + Number(soma18) + Number(soma19) + Number(soma20))
+    if (resultado5 >= 7) {
+        document.getElementById("somas5").innerHTML = 'você passou !'
+    } else {
+         document.getElementById("somas5").innerHTML = 'você não passou !'
+    }
+}
