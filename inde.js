@@ -54,9 +54,6 @@ function s4(){
         document.getElementById("somas4").innerHTML = 'você não passou !';
     }
 }
-//prompt
-var prompts = prompt("Qual é o seu nome ?");
-var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;
 //geografia
 function s5(){
     var s1 = document.getElementById("soma17").value;
@@ -71,3 +68,6 @@ function s5(){
          document.getElementById("somas5").innerHTML = 'você não passou !'
     }
 }
+//prompt
+var prompts = prompt("Qual é o seu nome ?");
+var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;
