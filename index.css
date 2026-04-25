@@ -11,11 +11,12 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.menu{
+.tema{
 justify-content: center; /* Centraliza os itens */
 align-items: center;   /* Alinha verticalmente */
 z-index: 2000;         /* Garante que fique sobre outros elementos */
-
+width: 100%;
+position: fixed;
 }
 .tema{
     
