@@ -72,3 +72,5 @@ function s5(){
 //prompt
 var prompts = prompt("Qual é o seu nome ?");
 var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;
+var serie = prompt("Qual é a sua série ?");
+var resultado = document.getElementById("serie").innerHTML = 'série ' + serie;
