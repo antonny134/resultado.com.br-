@@ -40,6 +40,3 @@ function s3(){
          document.getElementById("somas3").innerHTML = 'você não passou !';
     }
 }
-//prompt
-var prompts = prompt("Qual é o seu nome ?");
-var resposta = document.getElementById("nome").innerHTML = 'Bem-Vindo(a) ' +prompts;

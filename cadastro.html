@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cadastro.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
 </head>
-<body style="background: gray;">
+<body>
     <!--cadastro-->
-    <nav class="cadastro" style="margin-top: 0%; top: 0px; margin:222px
-    ; position:fixed; padding: 22px; ">
+    <nav class="cadastro">
 
         <form action="index.html" method="post">
             <div class="nome">
-            <input type="text" placeholder="nome" required>
+                <label for="nome">Nome :</label>
+            <input type="text" placeholder="Ex: Mateus" required>
         </div>
         <!---->
         <div class="idade">
-            <input type="text " placeholder="idade" required>
+            <label for="idade">Idade :</label>
+            <input type="date" name="idade" id="idade" required >
         </div>
         <!---->
         <div class="email">
-            <input type="email" placeholder="e-mail" required>
+            <label for="e-mail">E-mail :</label>
+            <input type="email" placeholder="Ex: marcos@gmail.exemplo" required>
         </div>
         <button type="submit">ok</button>
         </form>

@@ -11,12 +11,11 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
 .tema{
-justify-content: center; /* Centraliza os itens */
-align-items: center;   /* Alinha verticalmente */
-z-index: 2000;         /* Garante que fique sobre outros elementos */
-width: 100%;
-position: fixed;
+    z-index: 2000;         /* Garante que fique sobre outros elementos */
+    width: 100%;
+    position: fixed;
 }
 .tema{
     background: #333;
@@ -35,16 +34,4 @@ a {
 
 .site a{
     position: absolute;
-}
-.cadastro{
-    background: #333;
-    border-radius: 22px;
-    
-}
-input{
-    border-radius: 22px;
-    
-}
-button{
-    border-radius: 5px;
 }
