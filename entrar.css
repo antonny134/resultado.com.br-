@@ -5,93 +5,109 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-    background: #333;
     min-height: 100vh;
+    background: #333;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-left: 150px;
-}
-body.sidebar-collapsed {
-    padding-left: 60px;
+    justify-content: center;
+    padding: 24px;
 }
 .lateral {
     position: fixed;
     top: 0;
     left: 0;
-    width: 150px;
+    width: 80px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: gray;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 8px;
+    background: #222;
+    color: #fff;
 }
-.lateral.collapsed {
-    width: 60px;
+.lateral .toggle-btn,
+.lateral .nav-item {
+    width: 100%;
 }
-.toggle-btn {
+.lateral .toggle-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    color: #fff;
+    padding: 12px 0;
     cursor: pointer;
-    display: flex;
+}
+.lateral .nav-item{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0;
-}
-.nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 14px;
-    text-decoration: none;
-    color: black;
-}
-.lateral.collapsed .nav-item {
-    justify-content: center;
-}
-.lateral.collapsed .nav-item span {
-    display: none;
-}
-.lateral i {
-    color: black;
-    font-size: 21px;
-}
-.lateral a {
+    padding: 12px 0;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    color: #fff;
     text-decoration: none;
 }
-.login {
-    width: 100%;
-    max-width: 420px;
-    justify-content: center;
-    align-items: center;
+.login{
+    width: min(450px, 100%);
+    background: #222;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    color: #f5f5f5;
+    position: relative;
 }
-.login input{
-    width: 100%;
-    max-width: 350px;
-    padding: 12px 14px;
-    border: 1px solid #999;
-    border-radius: 4px;
-    background: #fff;
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 .tema {
-    color: black;
-    
+    color: #fff;
 }
-.login {
-    color: black;
-    font-size: 20px;
+.login label{
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
 }
-.submit{
-    width: 100px;
-
+.login input[type="email"],
+.login input[type="password"]{
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #555;
+    border-radius: 12px;
+    background: #111;
+    color: #fff;
 }
-.final {
-    font-size: 16px;
+.login input[type="email"]:focus,
+.login input[type="password"]:focus,
+.login input[type="submit"]:focus{
+    outline: 2px solid rgba(255,255,255,0.25);
 }
-.final a {
-    color: blue;
+.submit input{
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #f5f5f5;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit input:hover{
+    background: #fff;
+}
+.final{
+    text-align: center;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+.final a{
+    color: #6fc3ff;
     text-decoration: none;
 }
-.login {
-    background: gray;
-    border: 1 solid gray;
-    border-radius: 22px;
-    padding: 22px;
+.final a:hover{
+    text-decoration: underline;
 }
